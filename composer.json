@@ -1,0 +1,27 @@
+{
+    "name": "coalexe/yii2-notifications",
+    "description": "Yii2 wrapper for widget coalexe/notifications",
+    "authors": [
+        {
+            "name": "coalexe",
+            "email": "alex.cote@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/coalexe/notifications.git"
+      }
+    ],
+    "require": {
+        "yiisoft/yii2-jui": "^2.0",
+        "coalexe/notifications": "dev-master"
+    },    
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
