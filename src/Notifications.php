@@ -71,9 +71,7 @@ class Notifications extends Widget
 	
 		$options = empty($this->clientOptions) ? "" : Json::encode($this->clientOptions);
 		$id = $this->options["id"];
-	
-		$js[] = "jQuery('#$id').notification($options);";
 		
-		$view->registerJs("jQuery('#$id').notification($options);");
+		$view->registerJs("jQuery('#$id').notifications($options);");
 	}  
 }
