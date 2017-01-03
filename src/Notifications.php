@@ -13,7 +13,7 @@ use yii\helpers\Json;
 
 class Notifications extends Widget
 {
-  const DEFAULT_CLASS = "notifications";
+  const DEFAULT_CSS_CLASS = "notifications";
       
   public $notificationTypes = ["success", "info", "warning", "error"];
   public $options = [];
@@ -30,11 +30,11 @@ class Notifications extends Widget
       
     if(isset($this->options["class"]))
     {
-      $this->options["class"] .= " " . self::DEFAULT_CLASS;
+      $this->options["class"] .= " " . self::DEFAULT_CSS_CLASS;
     }
     else
     {
-      $this->options["class"] = self::DEFAULT_CLASS;
+      $this->options["class"] = self::DEFAULT_CSS_CLASS;
     }            
   }
   
@@ -56,7 +56,7 @@ class Notifications extends Widget
     }
     
     $html = Html::ul($notifications, ["id" => $this->options["id"], "class" => $this->options["class"] ,"item" => function($item, $index) {
-      return Html::tag("li", $item->message, ["class" => "notification-" . $type]);
+      return Html::tag("li", $item["message"], ["class" => "notification-" . $item["type"]]);
     }]);
     
     echo $html;
