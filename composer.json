@@ -7,7 +7,7 @@
             "email": "alex.cote@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "repositories": [
       {
         "type": "vcs",
