@@ -11,13 +11,13 @@ use yii\web\AssetBundle;
 
 class NotificationsAsset extends AssetBundle
 {
-  public $sourcePath = '@vendor';
+  public $sourcePath = '@vendor/coalexe/notifications/src';
   public $css = [
     '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
-    'coalexe/notifications/src/css/notifications.css'
+    'css/notifications.css'
   ];
   public $js = [
-    'coalexe/notifications/src/js/notifications.js'
+    'js/notifications.js'
   ];
   public $depends = [
     'coalexe\notifications\WidgetFactoryAsset'
