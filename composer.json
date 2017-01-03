@@ -11,7 +11,8 @@
     "repositories": [
       {
         "type": "vcs",
-        "url": "https://github.com/coalexe/notifications.git"
+        "url": "/home/alex/git/notifications"
+        //"url": "https://github.com/coalexe/notifications.git"
       }
     ],
     "require": {
