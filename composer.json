@@ -17,7 +17,12 @@
     "require": {
         "yiisoft/yii2-jui": "^2.0",
         "coalexe/notifications": "dev-master"
-    },    
+    },   
+    "autoload": {
+        "psr-4": {
+            "coalexe\\yii2-notifications\\": "src/"
+        }
+    },     
     "extra": {
         "asset-installer-paths": {
             "npm-asset-library": "vendor/npm",
