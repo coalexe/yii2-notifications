@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace notifications;
+namespace coalexe\notifications;
 
 use yii\web\AssetBundle;
 
