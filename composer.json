@@ -20,7 +20,7 @@
     },   
     "autoload": {
         "psr-4": {
-            "coalexe\\notifications\\": "src/"
+            "coalexe\\yiinotifications\\": "src/"
         }
     },     
     "extra": {
