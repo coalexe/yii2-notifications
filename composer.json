@@ -7,6 +7,7 @@
             "email": "alex.cote@gmail.com"
         }
     ],
+    "type": "yii2-extension",
     "minimum-stability": "dev",
     "repositories": [
       {
