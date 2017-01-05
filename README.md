@@ -6,6 +6,9 @@ To come
 
 # initialization
 ```html
+  <?php
+  use coalexe\notifications\Notifications;
+  ...
   <?= Notifications::widget(["clientOptions" => ["closeMethod" => "button"]]) ?>
 ```
 
