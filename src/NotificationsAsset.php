@@ -13,7 +13,6 @@ class NotificationsAsset extends AssetBundle
 {
   public $sourcePath = '@vendor/coalexe/notifications/src';
   public $css = [
-    '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
     'css/notifications.css'
   ];
   public $js = [
