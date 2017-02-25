@@ -21,4 +21,15 @@ class NotificationsAsset extends AssetBundle
   public $depends = [
     'coalexe\notifications\WidgetFactoryAsset'
   ];
+
+  public function init()
+  {
+    if (YII_ENV_PROD)
+    {
+      $this->css = ['css/notifications.min.css'];
+      $this->js = ['js/notifications.min.js'];
+    }
+
+    parent::init();
+  }
 }

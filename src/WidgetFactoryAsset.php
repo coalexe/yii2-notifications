@@ -20,4 +20,14 @@ class WidgetFactoryAsset extends AssetBundle
   public $depends = [
       'yii\web\JqueryAsset',
   ];
+
+  public function init()
+  {
+    if (YII_ENV_PROD)
+    {
+      $this->js = ['widget.min.js'];
+    }
+
+    parent::init();
+  }
 }
