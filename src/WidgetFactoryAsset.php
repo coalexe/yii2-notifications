@@ -25,7 +25,7 @@ class WidgetFactoryAsset extends AssetBundle
   {
     if (YII_ENV_PROD)
     {
-      $this->js = ['widget.min.js'];
+      $this->js = ['minified/widget.min.js'];
     }
 
     parent::init();
